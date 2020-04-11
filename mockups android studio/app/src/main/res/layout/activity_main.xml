@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+
+
+<ImageView
+    android:id="@+id/imageView5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:srcCompat="@drawable/bottom_bar" />
+
+<ImageView
+    android:id="@+id/imageView6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/top_bar_minas" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.867"
+        app:srcCompat="@drawable/map1" />
+
+    <ImageView
+    android:id="@+id/imageView8"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:srcCompat="@drawable/under_top_bar"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="27dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="34dp"
+        android:layout_height="10dp"
+        app:srcCompat="@drawable/line"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <ImageView
+    android:id="@+id/imageView10"
+    android:layout_width="34dp"
+    android:layout_height="10dp"
+    app:srcCompat="@drawable/line"
+    tools:layout_editor_absoluteX="7dp"
+    tools:layout_editor_absoluteY="49dp" />
+
+<ImageView
+    android:id="@+id/imageView11"
+    android:layout_width="34dp"
+    android:layout_height="10dp"
+    app:srcCompat="@drawable/line"
+    tools:layout_editor_absoluteX="7dp"
+    tools:layout_editor_absoluteY="59dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/question_mark"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="700dp" />
+
+    <TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="wE-drive"
+        android:textStyle="bold"
+    android:textColor="#FFFFFF"
+    android:textSize="24dp"
+    tools:layout_editor_absoluteX="150dp"
+    tools:layout_editor_absoluteY="32dp" />
+
+<ImageView
+    android:id="@+id/imageView13"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:srcCompat="@drawable/drive_a_car"
+    tools:layout_editor_absoluteX="112dp"
+    tools:layout_editor_absoluteY="69dp" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Drive a car!"
+    android:textSize="16dp"
+    tools:layout_editor_absoluteX="148dp"
+    tools:layout_editor_absoluteY="77dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
