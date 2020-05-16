@@ -12,10 +12,5 @@ public class Charger_Stations extends Charger
         this.station_status = station_status;
     }  
     
-     public void greeting()
-    {
-        System.out.println("Hello Everybody!");        
-    }
-    
     
 }
