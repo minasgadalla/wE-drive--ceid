@@ -5,6 +5,7 @@ public class car{
 	public string cordinates;
 	private string comments;
 	private string last_service;
+	public boolean lock;// states whether  the car is locked or  not
 	
 	public void valid_parking_zone(int cord){
 		if (cord are within the limits){
