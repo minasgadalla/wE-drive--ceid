@@ -1,7 +1,7 @@
 public class car{
 	
 	public int id;
-	private int battery_pre;
+	private int battery_pre=100;
 	public string cordinates;
 	private string comments;
 	private string last_service;
@@ -15,7 +15,7 @@ public class car{
 	}
 	
 	public void car_battery(){
-		if (this.battery_pre <0.2{
+		if (this.battery_pre <20{
 			return true;
 		}else {
 			return false;
