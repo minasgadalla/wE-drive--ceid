@@ -13,16 +13,7 @@ public class Charger extends User
     public int we_points;
     
     
-    Random rand = new Random();
-    
-    public void constructor(float initial_battery_percentage,float final_battery_percentage,double initial_location,double final_location,double charge_station_location)
-    {
-        this.initial_battery_percentage = initial_battery_percentage;
-        this.final_battery_percentage = final_battery_percentage;
-        this.car_initial_location = car_initial_location;
-        this.car_final_location = car_final_location;
-        this.charge_station_location = charge_station_location;
-    }
+    Random rand = new Random(); // create a random ovject
     
     public void choose_car(int car_id)
     {
