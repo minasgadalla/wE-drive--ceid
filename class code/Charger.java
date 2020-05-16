@@ -1,10 +1,6 @@
-package softwareenginnering;  //Delete it 
 import java.util.Random;
-/**
- *
- * @author user
- */
-public class Charger extends SoftwareEnginnering //Change to User for SoftEng
+
+public class Charger extends User 
 {
     public float initial_battery_percentage;
     public float final_battery_percentage;
@@ -28,17 +24,6 @@ public class Charger extends SoftwareEnginnering //Change to User for SoftEng
         this.charge_station_location = charge_station_location;
     }
     
-    public void choose_mode(){ //isws mporei na mpei sto User
-        System.out.println("Loading Charger Screen");
-        load_map();
-    }
-    
-    public void load_map()
-    {
-        //calling car function and charger station function
-        
-    }
-    
     public void choose_car(int car_id)
     {
         System.out.println("Please select a car");
@@ -52,25 +37,6 @@ public class Charger extends SoftwareEnginnering //Change to User for SoftEng
         }
     }
     
-    public void load_QR_screen()
-    {
-        System.out.println("Displaying QR_screen");
-        System.out.println("Please check the QR-code");
-        // check_QR(); //Could we call it here??
-    }
-    
-    public void check_QR(int QR_id)
-    {
-        if (QR_id == 202) //elegxos me to QR_id tou autokinitou proswrina 202
-        {
-            System.out.println("Successful");
-            load_screen();
-        }
-        else
-        {
-            load_QR_screen();
-        }
-    }
     
     public void load_screen()
     {
@@ -126,25 +92,5 @@ public class Charger extends SoftwareEnginnering //Change to User for SoftEng
         {
             load_error_msg();
         }
-    }
-    
-    public int collect_wepoints(int we_points)
-    {
-        choose_to_stop();
-        if(this.final_battery_percentage == 100 && choose_to_stop() == true)
-        {
-            we_points = we_points + rand.nextInt(250);
-            return we_points;
-            go_to();
-        }
-        else
-        {
-            check_final_coordinates();
-        }
-    }
-    
-    public void go_to()
-    {
-        //Kalei mia sinartisi tis klasis Termatismos Diadromis
-    }            
+    }           
 }
