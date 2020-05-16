@@ -15,7 +15,7 @@ public class car{
 	}
 	
 	public void car_battery(){
-		if (this.battery_pre <20%{
+		if (this.battery_pre <0.2{
 			return true;
 		}else {
 			return false;
