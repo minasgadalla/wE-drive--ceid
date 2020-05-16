@@ -17,11 +17,5 @@ public class Charger_Stations extends Charger
         System.out.println("Hello Everybody!");        
     }
     
-    public void creator(String name,String surname,int id,int year)
-    {
-        this.name=name;
-        this.surname=surname;
-        this.id=id;
-        this.year=year;
-    }
+    
 }
