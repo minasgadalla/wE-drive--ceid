@@ -11,4 +11,17 @@ public class Charger_Stations extends Charger
         this.station_location = station_location;
         this.station_status = station_status;
     }  
+    
+     public void greeting()
+    {
+        System.out.println("Hello Everybody!");        
+    }
+    
+    public void creator(String name,String surname,int id,int year)
+    {
+        this.name=name;
+        this.surname=surname;
+        this.id=id;
+        this.year=year;
+    }
 }
