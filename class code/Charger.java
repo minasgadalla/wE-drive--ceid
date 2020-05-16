@@ -6,11 +6,10 @@ public class Charger extends User
     public float final_battery_percentage;
     public double car_initial_location;
     public double car_final_location;
-    public double charge_station_location;
     public int car_id;
-    public int QR_id;
-    public double GPS_loc;
-    public int we_points;
+  
+    
+ 
     
     
     Random rand = new Random(); // create a random ovject
