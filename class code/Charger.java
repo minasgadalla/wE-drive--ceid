@@ -1,10 +1,5 @@
-package softwareenginnering;  //Delete it 
-import java.util.Random;
-/**
- *
- * @author user
- */
-public class Charger extends SoftwareEnginnering //Change to User for SoftEng
+
+public class Charger extends User 
 {
     public float initial_battery_percentage;
     public float final_battery_percentage;
@@ -16,11 +11,11 @@ public class Charger extends SoftwareEnginnering //Change to User for SoftEng
     public double GPS_loc;
     public int we_points;
     
-    
+    // create a random object for later use
     Random rand = new Random();
     
     public void constructor(float initial_battery_percentage,float final_battery_percentage,double initial_location,double final_location,double charge_station_location)
-    {
+    { // not sure about this
         this.initial_battery_percentage = initial_battery_percentage;
         this.final_battery_percentage = final_battery_percentage;
         this.car_initial_location = car_initial_location;
@@ -33,7 +28,7 @@ public class Charger extends SoftwareEnginnering //Change to User for SoftEng
         load_map();
     }
     
-    public void load_map()
+    public void load_map() // den xreiazetai edw
     {
         //calling car function and charger station function
         
