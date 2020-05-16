@@ -9,4 +9,11 @@ class qrcode extends car{
 			}
 		}
 	}
+	
+	public void load_QR_screen(){
+        	System.out.println("Displaying QR screen");
+        	System.out.println("Please scan the QR-code");
+        	this.check_QR();
+    }
+	
 }
