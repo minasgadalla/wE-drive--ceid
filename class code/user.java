@@ -26,9 +26,9 @@ public class User {
   }
  }
 
- public boolean set_pass(int i_pass) {
+ public boolean set_pass(int i_pass, int conf_pass) {
 
-  if (password is correct) {
+  if (conf_pass == i_pass) {
    this.pass = i_pass;
    return true;
   } else {
