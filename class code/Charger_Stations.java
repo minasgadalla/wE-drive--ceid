@@ -12,5 +12,4 @@ public class Charger_Stations extends Charger
         this.station_status = station_status;
     }  
     
-    
 }
