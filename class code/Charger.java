@@ -7,10 +7,6 @@ public class Charger extends User {
  public double car_final_location;
  public int car_id;
 
-
-
-
-
  Random rand = new Random(); // create a random ovject
 
  public void choose_car(int car_id) {
