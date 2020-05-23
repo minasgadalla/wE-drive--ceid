@@ -7,6 +7,14 @@ public class Volunteer extends User
     {
         System.out.println("Loading GPS route");
         System.out.println("Please confirm route:");
+        // We will think anout adding it instead of two System.outs
+       /*
+       @Override
+        protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        */
+    }
     }
     
     
