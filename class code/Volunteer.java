@@ -1,7 +1,9 @@
 public class Volunteer extends User
 {
     public int user_id;
-    public int location;  
+    public int location; 
+    private String coord_x;
+    private String coord_y;
     
     public void load_screen()
     {
