@@ -7,7 +7,6 @@ public class Volunteer extends User
     {
         System.out.println("Loading GPS route");
         System.out.println("Please confirm route:");
-        confirm_route();
     }
     
     
