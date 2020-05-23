@@ -6,7 +6,8 @@ public class Volunteer extends User
     public void loc_con(int user_id,int location)
     {
         user_id = this.user_id;
-        location = thislocation;
+        location = this.location;
+    }
     
     public int update_loc(location)
     {
