@@ -34,7 +34,7 @@ public class Charger extends User {
   }
  }
 
- public void coordinates(double car_initial_location) //Exei provlimata
+ public void coordinates(double car_initial_location) //Exei provlimata--
  {
   while (this.charge_station_location != this.car_final_location) {
    this.car_initial_location = this.car_final_location;
