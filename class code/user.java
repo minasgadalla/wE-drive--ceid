@@ -57,10 +57,12 @@ public class User {
  }
 
  public boolean set_phone(int ph) {
-  if (ph is coreect) {
+  if (ph is correct) {
    this.p_num = ph;
    return true;
-  } else {
+  } 
+  else 
+  {
    return false;
   }
  }
