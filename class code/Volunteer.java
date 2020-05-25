@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package softwareenginnering;
-
 import java.util.Scanner;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -16,7 +9,7 @@ import java.lang.*;
  *
  * @author user
  */
-public class Volunteer extends SoftwareEnginnering 
+public class Volunteer extends User 
 {
     public String user_id;
     public String coordinates; //volunteer
