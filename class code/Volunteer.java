@@ -194,12 +194,7 @@ public class Volunteer extends User
   //These two functions need to be relocated!!.... The commiter can take care of it! (194 -- 206).
     
     
-    public int update_loc(location)
-    {
-        public int new_location = location;
-        return new_location;
-    } 
-
+   
 
 /// Not final version . Scanning is required
 
