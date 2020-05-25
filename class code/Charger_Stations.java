@@ -1,6 +1,6 @@
 public class Charger_Stations extends Charger 
 {
-    //Some variables from "Charger" can be deleted , i'll update it later! 
+    //Some variables from "Charger" can be deleted, i'll update it later! 
     public int station_id;
     public int station_location;
     public String station_status;
