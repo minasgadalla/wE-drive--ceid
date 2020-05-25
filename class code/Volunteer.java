@@ -192,11 +192,7 @@ public class Volunteer extends User
     }
     
   //These two functions need to be relocated!!.... The commiter can take care of it! (194 -- 206).
-    public void loc_con(int user_id,int location)
-    {
-        user_id = this.user_id;
-        location = this.location;
-    }
+    
     
     public int update_loc(location)
     {
