@@ -1,5 +1,3 @@
-
-
 /**
  * This is the main class which runs, destroys, creates -- its the God
  */
@@ -8,23 +6,23 @@ public class wEdrive {
  static void main() {
   int user_f_action;
   System.out.println("Hello To wE-drive. Please select from below");
-  // show the first menu -- login, register, exit
+  // show from the first menu -- login, register, exit
   user_f_action = menu_a();
-  
-  switch(user_f_action){
-    case 1:
-        System.out.println("Please enter phone number");
-        System.out.println("Proccessing...");
-        System.out.println("Please enter your password");
-        System.out.println("Proccessing...");
-        System.out.println("Welcome back!!!!!");
-        menu_login();
-    case 2:
-    
-    }
-  
+
+  switch (user_f_action) {
+   case 1:
+    System.out.println("Please enter phone number");
+    System.out.println("Proccessing...");
+    System.out.println("Please enter your password");
+    System.out.println("Proccessing...");
+    System.out.println("Welcome back!!!!!");
+    menu_login();
+   case 2:
+
+  }
+
  }
- 
+
  static int menu_a() {
 
   Scanner in = new Scanner(System.in);
@@ -45,8 +43,8 @@ public class wEdrive {
     case 1:
      System.out.println("You've chosen to Login");
      return 1;
-     
-     
+
+
     case 2:
      System.out.println("You've chosen to Register");
      return 2;
@@ -63,32 +61,32 @@ public class wEdrive {
   System.out.println("Sorry to see you go :(");
   return 0;
  }
- 
+
  static void menu_login() {
 
-     int menuItem2;
-      Scanner in2 = new Scanner(System.in);
+  int menuItem2;
+  Scanner in2 = new Scanner(System.in);
 
-        System.out.print("Choose menu item: ");
-          System.out.println("1. Drive a car");
+  System.out.print("Choose menu item: ");
+  System.out.println("1. Drive a car");
   System.out.println("2. Charge a car");
   System.out.println("3. Volunteer");
-  
-   menuItem2 = in2. nextInt();
-        switch (menuItem2) {
-    case 1:
-     System.out.println("You've chosen to Login");
-     
-     
-    case 2:
-     System.out.println("You've chosen to Register");
 
-    case 0:
-     break;
+  menuItem2 = in2.nextInt();
+  switch (menuItem2) {
+   case 1:
+    System.out.println("You've chosen to Login");
 
-    default:
-     System.out.println("Invalid choice.");
-   }
-     
+
+   case 2:
+    System.out.println("You've chosen to Register");
+
+   case 0:
+    break;
+
+   default:
+    System.out.println("Invalid choice.");
+  }
+
  }
 }
