@@ -1,3 +1,6 @@
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
 public class User {
 
  private int pass;
@@ -32,14 +35,13 @@ public class User {
    this.pass = i_pass;
    return true;
   } else {
-   this.recomplete_form();
    return false;
   }
  }
 
  public boolean set_name(int name) {
 
-  if (name is correct) {
+  if (name is correct) {  //???
    this.fname = name;
    return true;
   } else {
@@ -47,8 +49,8 @@ public class User {
   }
  }
 
- public boolean set_id_drive(string id) {
-  if (id == ) {
+ public boolean set_id_drive(string id) { 
+  if (id == ) { // ???
    this.drive_id = id;
    return true;
   } else {
