@@ -1,3 +1,5 @@
+
+
 /**
  * This is the main class which runs, destroys, creates -- its the God
  */
@@ -11,9 +13,14 @@ public class wEdrive {
   
   switch(user_f_action){
     case 1:
-    // login
+        System.out.println("Please enter phone number");
+        System.out.println("Proccessing...");
+        System.out.println("Please enter your password");
+        System.out.println("Proccessing...");
+        System.out.println("Welcome back!!!!!");
+        menu_login();
     case 2:
-    //register
+    
     }
   
  }
@@ -55,5 +62,33 @@ public class wEdrive {
 
   System.out.println("Sorry to see you go :(");
   return 0;
+ }
+ 
+ static void menu_login() {
+
+     int menuItem2;
+      Scanner in2 = new Scanner(System.in);
+
+        System.out.print("Choose menu item: ");
+          System.out.println("1. Drive a car");
+  System.out.println("2. Charge a car");
+  System.out.println("3. Volunteer");
+  
+   menuItem2 = in2. nextInt();
+        switch (menuItem2) {
+    case 1:
+     System.out.println("You've chosen to Login");
+     
+     
+    case 2:
+     System.out.println("You've chosen to Register");
+
+    case 0:
+     break;
+
+    default:
+     System.out.println("Invalid choice.");
+   }
+     
  }
 }
