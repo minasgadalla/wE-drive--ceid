@@ -19,7 +19,7 @@ public class wEdrive {
     System.out.println("Welcome back!!!!!");
     menu_login();
    case 2:
-    user_register();    
+    user_register();
   }
  }
 
@@ -88,84 +88,84 @@ public class wEdrive {
   }
 
  }
- 
- static void user_register(){
-     User us = new User();
-     
-      Scanner inn = new Scanner(System.in);
-      boolean compl = false;
-      while (!compl){
-        System.out.println("Please enter your email: ");
-        String inputus = inn.nextLine();
-        boolean create = us.set_email(inputus);
-        if (create){
-            compl = true;
-            System.out.println("The email is valid.");
-        }else {
-            System.out.println("Invalid email form");
-        }
-      }
-      compl = false;
-      
-        while (!compl){
-        System.out.println("Please enter your password: ");
-        String pas1 = inn.nextLine();
-        System.out.println("Please re-enter your password: ");
-        String pas2 = inn.nextLine();
-        
-        boolean create = us.set_pass(pas1,pas2);
-        if (create){
-            compl = true;
-            System.out.println("Password setted.");
-        }else {
-            System.out.println("Invalid password. Please re-enter");
-        }
-      }
-      compl = false;
-      
-      while (!compl){
-        System.out.println("Please enter your Full Name: ");
-        String name1 = inn.nextLine();
-        
-        boolean create = us.set_name(name1);
-        
-        if (create){
-            compl = true;
-            System.out.println("Name setted.");
-        }else {
-            System.out.println("No name inserted.");
-        }
-      }
-      compl = false;
-      
-      while (!compl){
-        System.out.println("Please enter Driver licence ID: ");
-        String idd = inn.nextLine();
-        
-        boolean create = us.set_id_drive(idd);
-        
-        if (create){
-            compl = true;
-            System.out.println("ID setted.");
-        }else {
-            System.out.println("Invalid ID");
-        }
-      }
-      
-      compl = false;
-      
-      while (!compl){
-        System.out.println("Please enter your phone number: ");
-        String ph = inn.nextLine();
-        
-        boolean create = us.set_phone(ph);
-        
-        if (create){
-            compl = true;
-            System.out.println("Phone number Valid.");
-        }else {
-            System.out.println("Invalid Phone number");
-        }
-      }
-    }
+
+ static void user_register() {
+  User us = new User();
+
+  Scanner inn = new Scanner(System.in);
+  boolean compl = false;
+  while (!compl) {
+   System.out.println("Please enter your email: ");
+   String inputus = inn.nextLine();
+   boolean create = us.set_email(inputus);
+   if (create) {
+    compl = true;
+    System.out.println("The email is valid.");
+   } else {
+    System.out.println("Invalid email form");
+   }
+  }
+  compl = false;
+
+  while (!compl) {
+   System.out.println("Please enter your password: ");
+   String pas1 = inn.nextLine();
+   System.out.println("Please re-enter your password: ");
+   String pas2 = inn.nextLine();
+
+   boolean create = us.set_pass(pas1, pas2);
+   if (create) {
+    compl = true;
+    System.out.println("Password setted.");
+   } else {
+    System.out.println("Invalid password. Please re-enter");
+   }
+  }
+  compl = false;
+
+  while (!compl) {
+   System.out.println("Please enter your Full Name: ");
+   String name1 = inn.nextLine();
+
+   boolean create = us.set_name(name1);
+
+   if (create) {
+    compl = true;
+    System.out.println("Name setted.");
+   } else {
+    System.out.println("No name inserted.");
+   }
+  }
+  compl = false;
+
+  while (!compl) {
+   System.out.println("Please enter Driver licence ID: ");
+   String idd = inn.nextLine();
+
+   boolean create = us.set_id_drive(idd);
+
+   if (create) {
+    compl = true;
+    System.out.println("ID setted.");
+   } else {
+    System.out.println("Invalid ID");
+   }
+  }
+
+  compl = false;
+
+  while (!compl) {
+   System.out.println("Please enter your phone number: ");
+   String ph = inn.nextLine();
+
+   boolean create = us.set_phone(ph);
+
+   if (create) {
+    compl = true;
+    System.out.println("Phone number Valid.");
+   } else {
+    System.out.println("Invalid Phone number");
+   }
+  }
+ }
 }
