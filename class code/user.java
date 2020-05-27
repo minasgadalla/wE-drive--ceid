@@ -39,13 +39,12 @@ public class User {
  }
 
  public boolean set_name(String name) {
-    if (!name.isEmpty()){
-    this.fname = name;
-    return true;
-}
-    else{
-    return false;
-    }
+  if (!name.isEmpty()) {
+   this.fname = name;
+   return true;
+  } else {
+   return false;
+  }
  }
 
  public boolean set_id_drive(String id) {
@@ -66,6 +65,6 @@ public class User {
    return false;
   }
  }
- 
- 
+
+
 }
