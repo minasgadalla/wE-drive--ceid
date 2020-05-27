@@ -3,7 +3,7 @@ import java.util.regex.Matcher;
 
 public class User {
  private String pass;
- private int p_num;
+ private String p_num;
  private String email;
  private String fname;
  private String drive_id;
@@ -29,6 +29,7 @@ public class User {
  }
 
  public boolean set_pass(String i_pass, String conf_pass) {
+
   if (new String(i_pass).equals(conf_pass)) {
    this.pass = i_pass;
    return true;
@@ -48,7 +49,7 @@ public class User {
  }
 
  public boolean set_id_drive(String id) {
-  if (id != null) {
+  if (!id.isEmpty()) {
    this.drive_id = id;
    return true;
   } else {
@@ -56,13 +57,15 @@ public class User {
   }
  }
 
- public boolean set_phone(int ph) {
+ public boolean set_phone(String ph) {
   int length = String.valueOf(ph).length();
-  if (length > 0 && length < 11) {
+  if (length == 10) {
    this.p_num = ph;
    return true;
   } else {
    return false;
   }
  }
+ 
+ 
 }
