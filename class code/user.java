@@ -2,26 +2,25 @@ import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
 public class User {
-
- private int pass;
+ private String pass;
  private int p_num;
- private string email;
- private string fname;
- private string drive_id;
+ private String email;
+ private String fname;
+ private String drive_id;
 
  User() {
-  System.out.println("Please fill all the required fields");
+  System.out.println("Lets start creating your account!");
  }
 
- public boolean set_email(string i_email) {
-  7
-  string regex = "^[a-zA-Z0-9_+&*-]+(?:\\." +
+
+ public boolean set_email(String i_email) {
+  String regex = "^[a-zA-Z0-9_+&*-]+(?:\\." +
    "[a-zA-Z0-9_+&*-]+)*@" +
    "(?:[a-zA-Z0-9-]+\\.)+[a-z" +
    "A-Z]{2,7}$";
 
   Pattern pat = Pattern.compile(regex);
-  if (pat.matcher(email).matches()) {
+  if (pat.matcher(i_email).matches()) {
    this.email = i_email;
    return true;
   } else {
@@ -29,9 +28,9 @@ public class User {
   }
  }
 
- public boolean set_pass(int i_pass, int conf_pass) {
+ public boolean set_pass(String i_pass, String conf_pass) {
 
-  if (conf_pass == i_pass) {
+  if (new String(i_pass).equals(conf_pass)) {
    this.pass = i_pass;
    return true;
   } else {
@@ -39,18 +38,12 @@ public class User {
   }
  }
 
- public boolean set_name(int name) {
-
-  if (name is correct) {  //???
-   this.fname = name;
-   return true;
-  } else {
-   return false;
-  }
+ public void set_name(String name) {
+  this.fname = name;
  }
 
- public boolean set_id_drive(string id) { 
-  if (id == ) { // ???
+ public boolean set_id_drive(String id) {
+  if (id != null) {
    this.drive_id = id;
    return true;
   } else {
@@ -59,12 +52,11 @@ public class User {
  }
 
  public boolean set_phone(int ph) {
-  if (ph is correct) {
+  int length = String.valueOf(ph).length();
+  if (length > 0 && length < 11) {
    this.p_num = ph;
    return true;
-  } 
-  else 
-  {
+  } else {
    return false;
   }
  }
