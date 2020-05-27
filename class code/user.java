@@ -29,7 +29,6 @@ public class User {
  }
 
  public boolean set_pass(String i_pass, String conf_pass) {
-
   if (new String(i_pass).equals(conf_pass)) {
    this.pass = i_pass;
    return true;
@@ -38,8 +37,14 @@ public class User {
   }
  }
 
- public void set_name(String name) {
-  this.fname = name;
+ public boolean set_name(String name) {
+    if (!name.isEmpty()){
+    this.fname = name;
+    return true;
+}
+    else{
+    return false;
+    }
  }
 
  public boolean set_id_drive(String id) {
