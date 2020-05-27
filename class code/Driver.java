@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package softwareenginnering;
-
 import java.util.Scanner;
 import android.*;
 import java.time.*;
@@ -13,7 +6,7 @@ import java.time.*;
  *
  * @author user
  */
-public class Driver extends SoftwareEnginnering {
+public class Driver extends User {
     
     public int start_time;
     public int end_time;
