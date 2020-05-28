@@ -91,6 +91,14 @@ public class Driver extends User {
    screen_car_details();
   }
  }
+ 
+ public void car_hold()
+    {
+        request.User_Request();
+        System.out.println("Loading QR Screen");
+        load_QR_screen();
+        
+    }
 
  public boolean pay_with_card() {
   Scanner my_Object = new Scanner(System.in);
