@@ -137,7 +137,7 @@ public class Volunteer extends User
         select_volunteer(coordinates); 
     }
     
-    public void select_volunteer(int coordinates)
+    public void select_volunteer(String coordinates)
     {
         Scanner my_Obj = new Scanner(System.in);
         if(this.coordinates == user_id.coordinates)
@@ -168,12 +168,12 @@ public class Volunteer extends User
     public void confirm()
     {
         System.out.println("Confirmed");
-        //Load_screen();
+        Load_screen();
     }
     public void decline()
     {
         System.out.println("Declined");
-        //Load_screen();
+        Load_screen();
     }
     
     public void load_screen()
