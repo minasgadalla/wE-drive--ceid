@@ -41,3 +41,14 @@ public class Driver extends User {
         } 
     }
     
+    public void display_cars()
+    {
+        System.out.println("Loading available Cars");
+       @Override
+        protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        }
+        String value = get_car_info();
+        print_car_info(value);
+    }
