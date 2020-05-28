@@ -168,12 +168,12 @@ public class Volunteer extends User
     public void confirm()
     {
         System.out.println("Confirmed");
-        Load_screen();
+        load_screen();
     }
     public void decline()
     {
         System.out.println("Declined");
-        Load_screen();
+        load_screen();
     }
     
     public void load_screen()
