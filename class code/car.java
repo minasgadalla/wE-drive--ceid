@@ -2,25 +2,34 @@ public class car {
 
  public int id;
  private int battery_pre = 100;
- public string cordinates;
- private string comments;
- private string last_service;
+ public String cordinates;
+ private String comments;
+ private String last_service;
  public boolean lock; // states whether  the car is locked or  not
 
- public void valid_parking_zone(int cord) {
-  if (cord are within the limits) {
+ car(int idd, int bat) {
+  this.id = idd;
+  this.battery_pre = bat;
+  this.cordinates = "10:10:10";
+  this.last_service = "1/1/2020";
+  this.lock = false;
+
+ }
+
+ public boolean valid_parking_zone(String cord) {
+  if (cord != null && !cord.isEmpty()) {
    return true;
   } else {
    return false;
   }
  }
 
- public void car_battery() {
-  if (this.battery_pre < 20 {
-    return true;
-   } else {
-    return false;
-   }
+ public boolean car_battery() {
+  if (this.battery_pre < 20) {
+   return true;
+  } else {
+   return false;
   }
-
  }
+
+}
