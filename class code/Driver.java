@@ -19,6 +19,7 @@ public class Driver extends User {
  public boolean we_Points_return;
  public String my_value;
  public int QR_id;
+ public String car_id_request;
 
  public Driver[] car_info = new Driver[10];
 
@@ -94,7 +95,7 @@ public class Driver extends User {
  
  public void car_hold()
     {
-        request.User_Request();
+        request.User_Request(car_id_request);
         System.out.println("Loading QR Screen");
         load_QR_screen();
         
