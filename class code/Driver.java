@@ -132,6 +132,20 @@ public class Driver extends User {
         // check_QR(); //Could we call it here??
     }
 
+    public void scan()
+    {
+        Scanner scanning = new Scanner(System.in);
+        System.out.println("Choose to Scan Qr Code");
+        String Next_Btn = scanning.nextLine();
+        if (Next_Btn.equals("QR-Code"))
+        {
+            check_QR(QR_CODE.QR_id);
+        }
+        else
+        {
+            scan();
+        }
+    }
     
         
 }
