@@ -132,7 +132,22 @@ public class Driver extends User {
   } else {
    scan();
   }
- }
+  }
+
+ public void check_QR(int QR_id)
+    {
+        if (QR_id == 202) //elegxos me to QR_id tou autokinitou proswrina 202
+        {
+            System.out.println("Successful");
+            status = ret_qr_validity();
+        }
+        else
+        {
+            status = false;
+            go_to();
+        }
+    }
+ 
 
 
 }
