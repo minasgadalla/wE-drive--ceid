@@ -148,6 +148,10 @@ public class Driver extends User {
         }
     }
  
+ public boolean ret_qr_validity()
+    {
+        return true;
+    }
 
 
 }
