@@ -190,16 +190,23 @@ public class Volunteer extends User
         */
    
     }
-    
-  
-    
-    
-   
-
-/// Not final version . Scanning is required
-
-
-
+    public void scan()
+    {
+        Scanner scanning = new Scanner(System.in);
+        System.out.println("Choose to Scan Qr Code");
+        String Next_Btn = scanning.nextLine();
+        if (Next_Btn.equals("QR-Code"))
+        {
+            check_QR(QR_CODE.QR_id);
+        }
+        else
+        {
+            scan();
+        }
+    }
+     public void collect_wepoints()
+     {
+        we_Points points = new we_Points;
+        System.out.println(points.Total_Points());
+     }
 }
-
-//Dont delete anything!
