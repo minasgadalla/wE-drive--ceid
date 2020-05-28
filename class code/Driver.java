@@ -153,5 +153,23 @@ public class Driver extends User {
         return true;
     }
 
+ public void go_to()
+    {
+        switch(status)
+        {
+            case false:
+                System.out.println("Wrong Scanning please repeat");
+                load_QR_screen();
+            case true:
+                System.out.println("Success");
+                System.out.println("Showing complete period of Usage");
+                
+                time();
+                // Displaying screen for time period...Not ready yet!
+            default:
+                break;
+        }
+        
+    }
 
 }
