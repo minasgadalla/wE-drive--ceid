@@ -11,21 +11,21 @@ public class User {
  User() {
   System.out.println("Lets start creating your account!");
  }
- 
- User(boolean create){
-     if(!create){
-        this.pass = "TestUser";
-        this.p_num = "0";
-        this.email = "test@weride.com";
-        this.fname = "Test User";
-        this.drive_id = "1234";
-     }
-    
+
+ User(boolean create) {
+  if (!create) {
+   this.pass = "TestUser";
+   this.p_num = "0";
+   this.email = "test@weride.com";
+   this.fname = "Test User";
+   this.drive_id = "1234";
+  }
+
  }
 
- public String getfname(){
-    return this.fname;
-    }
+ public String getfname() {
+  return this.fname;
+ }
 
  public boolean set_email(String i_email) {
   String regex = "^[a-zA-Z0-9_+&*-]+(?:\\." +
@@ -53,13 +53,12 @@ public class User {
  }
 
  public boolean set_name(String name) {
-    if (!name.isEmpty()){
-    this.fname = name;
-    return true;
-}
-    else{
-    return false;
-    }
+  if (!name.isEmpty()) {
+   this.fname = name;
+   return true;
+  } else {
+   return false;
+  }
  }
 
  public boolean set_id_drive(String id) {
@@ -80,6 +79,6 @@ public class User {
    return false;
   }
  }
- 
- 
+
+
 }
