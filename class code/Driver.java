@@ -105,6 +105,4 @@ public class Driver extends User {
         {
             screen_car_details();
         }
-        
-    
     }
