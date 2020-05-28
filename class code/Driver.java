@@ -101,7 +101,20 @@ public class Driver extends User {
   }
  }
 
- //Edw tha mpei pay with with points /// Na svistei meta
+ public boolean pay_with_we_points()
+    {
+        Scanner my_Object = new Scanner(System.in);
+        System.out.println("Choose the amount of we-Points");
+        String Next_Btn = my_Object.nextLine();
+        if (!"".equals(Next_Btn))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 
  public void load_QR_screen() {
   System.out.println("Displaying QR_screen");
