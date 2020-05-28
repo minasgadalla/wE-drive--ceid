@@ -85,8 +85,10 @@ public class wEdrive {
   switch (menuItem2) {
    case 1:
     System.out.println("Drive");
+      break;
    case 2:
     System.out.println("Charge");
+      break;
    case 0:
    compl = true;
     break;
