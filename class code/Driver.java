@@ -105,4 +105,18 @@ public class Driver extends User {
         {
             screen_car_details();
         }
+        public boolean pay_with_card()
+    {
+        Scanner my_Object = new Scanner(System.in);
+        System.out.println("Enter Your Card Number");
+        String Next_Btn = my_Object.nextLine();
+        if (!"".equals(Next_Btn))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
     }
