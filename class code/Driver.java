@@ -52,3 +52,59 @@ public class Driver extends User {
         String value = get_car_info();
         print_car_info(value);
     }
+    
+    public String get_car_info()
+    {
+        Car myCar = new Car();
+        
+        
+        for(i=0; i<car.car_number(); i++)
+        {
+            car_info[i] = myCar.car_data();
+            return car_info[i];
+        }        
+    }
+    
+    public void print_car_info(String my_value)
+    {
+        System.out.println(my_value);
+        System.out.println("Now loading Cars Details Screen");
+        screen_car_details();
+    }
+    
+    public void screen_car_details()
+    {
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main_II);
+        }
+        
+        System.out.println("Choose your Payment technic");
+        Scanner my_Object = new Scanner(System.in);
+        String Next_Btn = my_Object.nextLine();
+        if (Next_Btn.equals("Card"))
+        {
+            card_return =pay_with_card();
+            myDetail.save_option(); // It is called from payment_details Class
+        }
+        else if (Next_Btn.equals("we-Points"))
+        {
+            we-Points_return = pay_with_we_points();
+            myPoints.save_option(); // It is called from wE-Points Class      
+        }
+        else
+        {
+            screen_car_details();
+        }
+        if ((card_return == true) && (we_Points_return == true))
+        {
+            car_hold(); 
+        }
+        else
+        {
+            screen_car_details();
+        }
+        
+    
+    }
