@@ -17,6 +17,8 @@ public class Driver extends User {
  public boolean status;
  public boolean card_return;
  public boolean we_Points_return;
+ public String my_value;
+ public int QR_id;
 
  public Driver[] car_info = new Driver[10];
 
