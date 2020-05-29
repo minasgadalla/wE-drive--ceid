@@ -1,5 +1,5 @@
 /**
- * This is the main class which runs, destroys, creates -- its the God
+ * This is the main class which runs, destroys, creates -- its the God himself!
  */
 
 import java.util.Scanner;
