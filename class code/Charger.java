@@ -6,6 +6,7 @@ public class Charger extends User {
  public double car_initial_location;
  public double car_final_location;
  public int car_id;
+ public double charge_station_location; /// Na mpei sto domain!
 
  Random rand = new Random(); // create a random ovject
 
