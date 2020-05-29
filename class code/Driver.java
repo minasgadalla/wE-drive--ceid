@@ -193,4 +193,9 @@ public void time()
         Total_time = end_time - start_time;
         return Total_time;    
     }
+ public void end_ride()
+    {
+        System.out.println("Chosed Stop Drive");
+        //Displaying Stop Screen .. The current xml is not yet completed.
+    }
 }
