@@ -198,4 +198,9 @@ public void time()
         System.out.println("Chosed Stop Drive");
         //Displaying Stop Screen .. The current xml is not yet completed.
     }
+ public void pause_ride()
+    {
+        System.out.println("Chosed Pause Drive");
+        //Displaying Pause Screen .. The current xml is not yet completed.
+    }
 }
