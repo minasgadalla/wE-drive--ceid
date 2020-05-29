@@ -11,19 +11,29 @@ public class userscards
     /**
      * Constructor for objects of class usercards
      */
-    public userscards(int num, String name, int cvc, String exp, boolean def)
+    public userscards()
     {
         // initialise instance variables
-        this.card_default = num;
+
+    }
+    
+    public void printCard(){
+        System.out.println("Card Number " +this.card_default);
+        System.out.println(" Name " + this.card_name);
+    }
+    
+    public void add_new_card(int num, String name, int cvc, String exp, boolean def){
+            this.card_number = num;
         this.card_name = name;
         this.card_cvc =  cvc;
         this. card_exp = exp;
         this.card_default = def;
     }
     
-    public void printCard(){
-        System.out.println("Card Number " +this.card_default);
-        System.out.println(" Name " + this.cardname);
+    
+    public int get_card_info(){
+        return this.card_number;
+        
     }
     
     public boolean is_default(){
@@ -33,5 +43,5 @@ public class userscards
            return false;
         }
     }
-
+    
 }
