@@ -37,3 +37,16 @@ public class timer{
     public void start_pause_timer(){
     
     }
+    
+       public boolean stop_pause(int time){
+        if (time > 6){
+            this.stop_timer(true);
+            // increase cost payment
+            return true;
+        }else{
+            this.stop_timer(true);
+            // system print cost
+            return false;
+        }
+    }
+}
