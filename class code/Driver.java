@@ -188,4 +188,9 @@ public void time()
         Total_time = get_time();
         System.out.println(Total_time);
     }
+ public int get_time()
+    {
+        Total_time = end_time - start_time;
+        return Total_time;    
+    }
 }
