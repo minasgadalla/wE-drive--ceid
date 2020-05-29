@@ -3,16 +3,17 @@
  */
 
 import java.util.Scanner;
-import java.util.ArrayList; 
+import java.util.ArrayList;
 
 public class wEdrive {
  static User us = new User(true);
  static User testuser = new User(false);
+ static wepoints wep = new wepoints();
 
  static void main() {
 
   int user_f_action;
-  System.out.println("Hello To wE-drive. Please select from below");
+  System.out.println("Welcome To wE-drive. Please select from below");
   // show from the first menu -- login, register, exit
   user_f_action = menu_a();
 
@@ -73,22 +74,26 @@ public class wEdrive {
 
  static void menu_logged() {
 
-  int menuItem2,menuItem11;
+  int menuItem2, menuItem11;
   Scanner in2 = new Scanner(System.in);
   Scanner in3 = new Scanner(System.in);
   System.out.println("What do you want to do?: ");
   System.out.println("1. Drive a car");
   System.out.println("2. Charge a car");
   System.out.println("3. Volunteer");
-  ArrayList<car> carlist = new ArrayList<car>();
+  System.out.println("-------------");
+  System.out.println(" Available wE-points for redeem: "+ wep.get_wepoints());
+  System.out.println("-------------");
+
+  ArrayList < car > carlist = new ArrayList < car > ();
 
   for (int i = 0; i < 5; i++) {
-    int id = (i+1)*6914 + 16736 + i*150;
-    int battery = i*10 + 13 + i*5;
-    car cr = new car(id,battery);
-    carlist.add(cr);
-}
-  
+   int id = (i + 1) * 6914 + 16736 + i * 150;
+   int battery = i * 10 + 13 + i * 5;
+   car cr = new car(id, battery);
+   carlist.add(cr);
+  }
+
   boolean compl = false;
   while (!compl) {
 
@@ -96,20 +101,26 @@ public class wEdrive {
 
    switch (menuItem2) {
     case 1:
-    boolean b_selected = false;
-     while(!b_selected)
-     {
-     System.out.println("Which car do you want to drive");
-     for (int i = 0; i < 5; i++) {
-         System.out.println(i +". Car ID: " + carlist.get(i).getid() + " Battery Percentage: "+ carlist.get(i).getbat() + "%");
+     boolean b_selected = false;
+     while (!b_selected) {
+      System.out.println("Which car do you want to drive");
+      for (int i = 0; i < 5; i++) {
+       System.out.println(i + ". Car ID: " + carlist.get(i).getid() + " Battery Percentage: " + carlist.get(i).getbat() + "%");
+      }
+      menuItem11 = in2.nextInt();
+      if (menuItem11 >= 0 && menuItem11 < 6) {
+       carlist.get(menuItem11).startDrive();
+       int time_pas =  carlist.get(menuItem11).active_time;
+       wep.calc_wepoints(time_pas);
+       System.out.println("----- Final wEpoints: " + wep.get_wepoints());
+       System.out.println("----------------DONE--------------");
+       b_selected = true;
+       return;
+      }
+      
      }
-     menuItem11 = in2.nextInt();
-     if (menuItem11 > 0 && menuItem11 <6){
-        carlist.get(menuItem11).startDrive();
-        b_selected = true;
-        }
-    }
-    
+
+
      break;
     case 2:
      System.out.println("Charge");
@@ -126,7 +137,6 @@ public class wEdrive {
  }
 
  static void user_register() {
-
 
   Scanner inn = new Scanner(System.in);
   boolean compl = false;
