@@ -182,5 +182,10 @@ public class Driver extends User {
         }
         
     }
-
+public void time()
+    {
+        System.out.println("Time of use is:");
+        Total_time = get_time();
+        System.out.println(Total_time);
+    }
 }
