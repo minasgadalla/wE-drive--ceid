@@ -89,12 +89,12 @@ public class wEdrive {
 
   boolean compl = false;
   while (!compl) {
-     System.out.println("What do you want to do?: ");
-     System.out.println("0. Exit");
-  System.out.println("1. Drive a car");
-  System.out.println("2. Charge a car");
-  System.out.println("3. Volunteer");
-  System.out.println("Available wE-points for redeem: "+ wep.get_wepoints());
+   System.out.println("What do you want to do?: ");
+   System.out.println("0. Exit");
+   System.out.println("1. Drive a car");
+   System.out.println("2. Charge a car");
+   System.out.println("3. Volunteer");
+   System.out.println("Available wE-points for redeem: " + wep.get_wepoints());
    menuItem2 = in2.nextInt();
 
    switch (menuItem2) {
@@ -108,16 +108,22 @@ public class wEdrive {
       menuItem11 = in2.nextInt();
       if (menuItem11 >= 0 && menuItem11 < 6) {
        carlist.get(menuItem11).startDrive();
-       int time_pas =  carlist.get(menuItem11).active_time;
+       int time_pas = carlist.get(menuItem11).active_time;
        wep.calc_wepoints(time_pas);
        System.out.println("");
        b_selected = true;
       }
-      
+
      }
      break;
     case 2:
-     System.out.println("Charge");
+     boolean b_selected2 = false;
+     System.out.println("Which car do you want to charge");
+     for (int i = 0; i < 5; i++) {
+      if (carlist.get(i).getbat() < 20) {
+       System.out.println(i + ". Car ID: " + carlist.get(i).getid() + " Battery Percentage: " + carlist.get(i).getbat() + "%");
+      }
+     }
      return;
     case 0:
      System.out.println("See you again soon!");
