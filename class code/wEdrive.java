@@ -1,5 +1,5 @@
 /**
- * This is the main class which runs, destroys, creates -- its the God himself!
+ * This is the main class which runs, destroys, creates -- its the God
  */
 
 import java.util.Scanner;
@@ -25,7 +25,7 @@ public class wEdrive {
     menu_logged();
     break;
    case 2:
-    user_register();
+    register();
     menu_logged();
     break;
    default:
@@ -137,7 +137,7 @@ public class wEdrive {
   }
  }
 
- static void user_register() {
+ static void register() {
 
   Scanner inn = new Scanner(System.in);
   boolean compl = false;
