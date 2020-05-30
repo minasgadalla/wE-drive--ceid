@@ -3,12 +3,12 @@ public class photoCheck
 {
     // instance variables - replace the example below with your own
 
-    public photoCheck()
+    public void photoCheck()
     {
 
     }
 
-    public void connction()
+    public void connection()
     {
           System.out.println("Please wait...");
 
