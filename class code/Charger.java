@@ -63,5 +63,10 @@ public class Charger extends User {
    load_error_msg();
   }
  }
+ 
+ public boolean show_error_msg()
+ {
+   System.out.println("Error occured please try again!");
+ }
     
 }
