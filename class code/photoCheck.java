@@ -1,5 +1,4 @@
-
-public class photoCheck
+photoCheck extends car
 {
     // instance variables - replace the example below with your own
 
