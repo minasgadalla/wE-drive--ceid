@@ -20,8 +20,13 @@ photoCheck extends car
             return true;
             
         }else{
+            this.invalid_upload();
             return false;
         }
+    }
+    
+    public void invalid_upload(){
+        System.out.println("Invalid photo. PLease try again");
     }
     
     public boolean evaluation(String photo){
