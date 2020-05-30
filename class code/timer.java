@@ -3,9 +3,9 @@ public class timer {
  private boolean active;
  private int active_time;
  private int time;
+
  public timer() {
-  // initialise instance variables
-  System.out.println("Timer created");
+
   this.active = false;
   this.active_time = 0;
   this.time = 0;
@@ -35,6 +35,10 @@ public class timer {
 
  public void start_pause_timer() {
 
+ }
+
+ public int getTime() {
+  return this.time;
  }
 
  public boolean stop_pause(int time) {
