@@ -24,6 +24,10 @@ public class payreq {
    return false;
   }
  }
+ 
+  public void increase_cost(){
+    this.pay_cost += 50;
+  }
 
 
 
