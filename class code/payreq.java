@@ -29,6 +29,8 @@ public class payreq {
     this.pay_cost += 50;
   }
 
-
+ public int get_cost(){
+        return this.pay_cost;
+    }
 
 }
