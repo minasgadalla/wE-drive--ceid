@@ -77,26 +77,24 @@ public class wEdrive {
   int menuItem2, menuItem11;
   Scanner in2 = new Scanner(System.in);
   Scanner in3 = new Scanner(System.in);
-  System.out.println("What do you want to do?: ");
-  System.out.println("1. Drive a car");
-  System.out.println("2. Charge a car");
-  System.out.println("3. Volunteer");
-  System.out.println("-------------");
-  System.out.println(" Available wE-points for redeem: " + wep.get_wepoints());
-  System.out.println("-------------");
 
   ArrayList < car > carlist = new ArrayList < car > ();
 
   for (int i = 0; i < 5; i++) {
    int id = (i + 1) * 6914 + 16736 + i * 150;
-   int battery = i * 10 + 13 + i * 5;
+   int battery = i * 10 + i + i * 5;
    car cr = new car(id, battery);
    carlist.add(cr);
   }
 
   boolean compl = false;
   while (!compl) {
-
+     System.out.println("What do you want to do?: ");
+     System.out.println("0. Exit");
+  System.out.println("1. Drive a car");
+  System.out.println("2. Charge a car");
+  System.out.println("3. Volunteer");
+  System.out.println("Available wE-points for redeem: "+ wep.get_wepoints());
    menuItem2 = in2.nextInt();
 
    switch (menuItem2) {
@@ -110,22 +108,19 @@ public class wEdrive {
       menuItem11 = in2.nextInt();
       if (menuItem11 >= 0 && menuItem11 < 6) {
        carlist.get(menuItem11).startDrive();
-       int time_pas = carlist.get(menuItem11).active_time;
+       int time_pas =  carlist.get(menuItem11).active_time;
        wep.calc_wepoints(time_pas);
-       System.out.println("----- Final wEpoints: " + wep.get_wepoints());
-       System.out.println("----------------DONE--------------");
+       System.out.println("");
        b_selected = true;
-       return;
       }
-
+      
      }
-
-
      break;
     case 2:
      System.out.println("Charge");
      return;
     case 0:
+     System.out.println("See you again soon!");
      compl = true;
      return;
 
