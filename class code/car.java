@@ -29,13 +29,22 @@ public class car {
   return this.battery_pre;
  }
 
+ public void updatebat() {
+  this.battery_pre -= 20;
+ }
+
+
  public void startDrive() {
+  if (this.check_battery()) {
+   System.out.println("You can not drive that car right now. ");
+   System.out.println("The battery of the car is lower than 20%. Please consider charging it. ");
+   return;
+  }
   routes rt = new routes();
   timer tm = new timer();
   tm.increaseTime();
   Scanner in2 = new Scanner(System.in);
   //timer time = new tsimer();
-  System.out.println("--------------------");
   System.out.println("--------------------");
   System.out.println("Tsouf tsouf. You are driving:");
   tm.increaseTime();
@@ -72,14 +81,18 @@ public class car {
 
  public void end_ride(timer tm, routes rt) {
   if (valid_parking_zone("10:10")) {
-   System.out.println("----- Valid Parking zone.");
-   System.out.println("----- Route Time " + tm.getTime() + "minutes");
-   System.out.println("----- Route Cost " + rt.calculate_cost(tm.getTime()) + "€");
+   this.updatebat();
+   System.out.println("----> You have parked on a Valid Parking zone.");
    this.active_time = tm.getTime();
-   System.out.println("----- Route Time " + tm.getTime() + "minutes");
-
-
+   System.out.println("----> Route Time " + tm.getTime() + " minutes");
+   System.out.println("----> Route Cost " + rt.calculate_cost(tm.getTime()) + "€");
+   System.out.println("----> Final Battery Percentage " + this.getbat() + "%");
+   if (this.check_battery()) {
+    System.out.println("----> The battery of the car is running low. Please consider charging it");
+   }
+   System.out.println("--------------------");
   }
+
 
 
  }
