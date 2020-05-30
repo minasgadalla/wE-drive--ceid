@@ -82,7 +82,7 @@ public class wEdrive {
   System.out.println("2. Charge a car");
   System.out.println("3. Volunteer");
   System.out.println("-------------");
-  System.out.println(" Available wE-points for redeem: "+ wep.get_wepoints());
+  System.out.println(" Available wE-points for redeem: " + wep.get_wepoints());
   System.out.println("-------------");
 
   ArrayList < car > carlist = new ArrayList < car > ();
@@ -110,14 +110,14 @@ public class wEdrive {
       menuItem11 = in2.nextInt();
       if (menuItem11 >= 0 && menuItem11 < 6) {
        carlist.get(menuItem11).startDrive();
-       int time_pas =  carlist.get(menuItem11).active_time;
+       int time_pas = carlist.get(menuItem11).active_time;
        wep.calc_wepoints(time_pas);
        System.out.println("----- Final wEpoints: " + wep.get_wepoints());
        System.out.println("----------------DONE--------------");
        b_selected = true;
        return;
       }
-      
+
      }
 
 
