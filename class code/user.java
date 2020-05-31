@@ -80,5 +80,15 @@ public class User {
   }
  }
 
-
+public void empty_fields(String fname,String i_pass,String i_email )
+ {
+     if (fname.isEmpty() || i_pass.isEmpty() || i_email.isEmpty())
+     {
+         System.out.println("Empty spaces must be filled, please try again");
+     }
+     else
+     {
+         System.out.println("Please click continue");
+     }
+ }
 }
